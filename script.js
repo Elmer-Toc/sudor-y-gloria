@@ -11,7 +11,7 @@ const productos = [
         descripcion: 'Mangas cortas, tejido ligero que absorbe sudor. Ideal para running y pesas.',
         precio: 89.00,
         imagen: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop',
-        colores: ['Negro', 'Gris', 'Azul Marino'],
+        colores: ['Negro', 'Gris', 'Azul Marino','blanco'],
         tallas: ['S', 'M', 'L', 'XL', 'XXL'],
         categoria: 'hombres',
         badge: 'Nuevo'
