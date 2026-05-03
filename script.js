@@ -14,7 +14,7 @@ const productos = [
         colores: ['Negro', 'Gris', 'Azul Marino','blanco'],
         tallas: ['S', 'M', 'L', 'XL', 'XXL'],
         categoria: 'hombres',
-        badge: 'nuevo'
+        badge: 'NUEVO'
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ const productos = [
         colores: ['Negro', 'Rosa', 'Verde Menta'],
         tallas: ['XS', 'S', 'M', 'L', 'XL'],
         categoria: 'mujeres',
-        badge: ''
+        badge: 'POPULAR'
     },
     {
         id: 4,
