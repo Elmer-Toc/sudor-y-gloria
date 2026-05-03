@@ -87,7 +87,7 @@ const productos = [
         nombre: 'Short Ciclista',
         descripcion: 'Talla ajustada, 5" de longitud. Libertad para cada movimiento.',
         precio: 89.00,
-        imagen: 'https://www.ciclovia.com.py/media/catalog/product/a/p/api-v1.1-file-public_files-pim-assets-24-5d-7c-5f-5f7c5d247cff234cfdd64799-images-d4-f0-a6-63-63a6f0d4a2f155bac9c408f3-1791250_Short_Ciclista_NE_CE-p_Hombre_M_Pro-X_1b.jpg?quality=95&bg-color=255,255,255&fit=bounds&height=1000&width=1000&canvas=1000:1000',
+        imagen: 'https://www.ciclovia.com.py/media/catalog/product/a/p/api-v1.1-file-public_files-pim-assets-24-5d-7c-5f-5f7c5d247cff234cfdd64799-images-d4-f0-a6-63-63a6f0d4a2f155bac9c408f3-1791250_Short_Ciclista_NE_CE-p_Hombre_M_Pro-X_1b.jpg?quality=95&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:',
         colores: ['Negro', 'Burdeos'],
         tallas: ['XS', 'S', 'M', 'L'],
         categoria: 'mujeres',
