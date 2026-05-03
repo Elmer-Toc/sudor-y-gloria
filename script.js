@@ -14,7 +14,7 @@ const productos = [
         colores: ['Negro', 'Gris', 'Azul Marino','blanco'],
         tallas: ['S', 'M', 'L', 'XL', 'XXL'],
         categoria: 'hombres',
-        badge: ''
+        badge: 'nuevo'
     },
     {
         id: 2,
