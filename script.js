@@ -1,6 +1,5 @@
 /* ============================================================
    SUDOR Y GLORIA - JAVASCRIPT
-   Etoc
    Carrito funcional, localStorage, modales, toast, etc.
    ============================================================ */
 
