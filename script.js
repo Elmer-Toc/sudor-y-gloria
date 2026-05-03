@@ -1,5 +1,6 @@
 /* ============================================================
    SUDOR Y GLORIA - JAVASCRIPT
+   Etoc
    Carrito funcional, localStorage, modales, toast, etc.
    ============================================================ */
 
@@ -14,7 +15,7 @@ const productos = [
         colores: ['Negro', 'Gris', 'Azul Marino','blanco'],
         tallas: ['S', 'M', 'L', 'XL', 'XXL'],
         categoria: 'hombres',
-        badge: 'Nuevo'
+        badge: ''
     },
     {
         id: 2,
@@ -36,7 +37,7 @@ const productos = [
         colores: ['Negro', 'Rosa', 'Verde Menta'],
         tallas: ['XS', 'S', 'M', 'L', 'XL'],
         categoria: 'mujeres',
-        badge: 'Popular'
+        badge: ''
     },
     {
         id: 4,
