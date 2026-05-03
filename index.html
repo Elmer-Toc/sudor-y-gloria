@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudor y Gloria | Ropa Deportiva de Alto Rendimiento</title>
+    <meta name="description" content="Sudor y Gloria - Ropa deportiva de alto rendimiento en Guatemala. Diseños cómodos, telas que respiran y resistencia al sudor.">
+
+    <!-- Google Fonts: Playfair Display (serif títulos) + Inter (sans-serif cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER STICKY ==================== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <!-- Logo -->
+            <a href="#inicio" class="header__logo">
+                <span class="header__logo-icon">💪</span>
+                <span class="header__logo-text">Sudor <span class="text-accent">&</span> Gloria</span>
+            </a>
+
+            <!-- Navegación principal -->
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="#inicio" class="header__nav-link active">Inicio</a></li>
+                    <li><a href="#catalogo" class="header__nav-link">Catálogo</a></li>
+                    <li><a href="#nosotros" class="header__nav-link">Nosotros</a></li>
+                    <li><a href="#blog" class="header__nav-link">Blog</a></li>
+                    <li><a href="#contacto" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Acciones: carrito + menú hamburguesa -->
+            <div class="header__actions">
+                <button class="btn-icon cart-btn" id="cartBtn" aria-label="Abrir carrito de compras">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="btn-icon hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="inicio">
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <span class="hero__badge">🔥 Envío gratis en compras mayores a Q350</span>
+                <h1 class="hero__title">Sudor <span class="text-accent">&</span> Gloria</h1>
+                <p class="hero__subtitle">Ropa deportiva de alto rendimiento en Guatemala. Diseños cómodos, telas que respiran y resistencia al sudor. Perfecto para crossfit, running, pesas y yoga.</p>
+                <div class="hero__buttons">
+                    <a href="#catalogo" class="btn btn-primary">Ver Colección <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#catalogo" class="btn btn-outline">Comprar Ahora</a>
+                </div>
+            </div>
+            <!-- Flecha scroll down -->
+            <a href="#catalogo" class="hero__scroll-down" aria-label="Desplazar hacia abajo">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ========== CATÁLOGO ========== -->
+        <section class="section catalog" id="catalogo">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Catálogo</span>
+                    <h2 class="section__title">Nuestra Colección</h2>
+                    <p class="section__subtitle">Prendas diseñadas para acompañarte en cada entrenamiento, con la mejor calidad y al mejor precio.</p>
+                </div>
+                <!-- Grid de productos generado dinámicamente -->
+                <div class="catalog__grid" id="catalogGrid">
+                    <!-- JS llena este grid -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <section class="section about" id="nosotros">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Nosotros</span>
+                    <h2 class="section__title">Conocé Sudor y Gloria</h2>
+                </div>
+
+                <!-- Historia -->
+                <div class="about__story">
+                    <p>
+                        <strong>Sudor y Gloria</strong> nace en Guatemala con la misión de hacer que el fitness sea accesible y cómodo para todos. Sabemos que la ropa deportiva de calidad solía ser cara y difícil de conseguir, por eso creamos nuestra propia línea: telas premium, diseños funcionales y precios justos.
+                    </p>
+                    <p>
+                        Trabajamos con pequeños talleres locales y usamos materiales sostenibles siempre que es posible. Nos apasiona el deporte y queremos que te sientas seguro/a mientras sudas la gota gorda.
+                    </p>
+                </div>
+
+                <!-- Valores -->
+                <div class="about__values">
+                    <div class="value-card">
+                        <div class="value-card__icon">💪</div>
+                        <h3 class="value-card__title">Rendimiento</h3>
+                        <p class="value-card__desc">Cada prenda está probada en gimnasio para garantizar máxima comodidad y durabilidad.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">🌱</div>
+                        <h3 class="value-card__title">Sostenibilidad</h3>
+                        <p class="value-card__desc">Empaques biodegradables y procesos que minimizan el impacto ambiental.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card__icon">🇬🇹</div>
+                        <h3 class="value-card__title">Hecho en Guatemala</h3>
+                        <p class="value-card__desc">Apoyamos la economía local trabajando con talleres guatemaltecos.</p>
+                    </div>
+                </div>
+
+                <!-- Misión y Visión -->
+                <div class="about__mission-vision">
+                    <div class="mv-card mv-card--mission">
+                        <div class="mv-card__icon">🎯</div>
+                        <h3 class="mv-card__title">Misión</h3>
+                        <p>Hacer que el fitness sea accesible y cómodo para todos, ofreciendo ropa deportiva de calidad con telas premium, diseños funcionales y precios justos.</p>
+                    </div>
+                    <div class="mv-card mv-card--vision">
+                        <div class="mv-card__icon">🌟</div>
+                        <h3 class="mv-card__title">Visión</h3>
+                        <p>Ser la marca líder de ropa deportiva en Centroamérica, reconocida por nuestra calidad, sostenibilidad y compromiso con el talento local.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RESEÑAS ========== -->
+        <section class="section reviews" id="resenas">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Testimonios</span>
+                    <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+                </div>
+                <div class="reviews__grid">
+                    <!-- Reseña 1 -->
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Andrea M." class="review-card__photo" loading="lazy">
+                        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-card__text">"Las leggings son increíbles, no se mueven al hacer sentadillas. Llevo 3 meses con ellas y siguen como nuevas."</p>
+                        <span class="review-card__name">Andrea M.</span>
+                    </div>
+                    <!-- Reseña 2 -->
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Carlos R." class="review-card__photo" loading="lazy">
+                        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-card__text">"La camiseta Dry-Fit es mi favorita para correr. No huele mal después de entrenar duro."</p>
+                        <span class="review-card__name">Carlos R.</span>
+                    </div>
+                    <!-- Reseña 3 -->
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="Sofía G." class="review-card__photo" loading="lazy">
+                        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-card__text">"Excelente atención al cliente. Me ayudaron a cambiar un producto sin problema."</p>
+                        <span class="review-card__name">Sofía G.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BLOG / TIPS ========== -->
+        <section class="section blog" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Blog</span>
+                    <h2 class="section__title">Tips Fitness</h2>
+                    <p class="section__subtitle">Artículos para mejorar tu rendimiento y estilo de vida.</p>
+                </div>
+                <div class="blog__grid">
+                    <!-- Artículo 1 -->
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop" alt="Cómo elegir leggings" class="blog-card__img" loading="lazy">
+                        <div class="blog-card__body">
+                            <span class="blog-card__date">15 Marzo, 2026</span>
+                            <h3 class="blog-card__title">Cómo elegir tus leggings ideales según tu tipo de entrenamiento</h3>
+                            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Artículo 2 -->
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop" alt="Rutina en casa" class="blog-card__img" loading="lazy">
+                        <div class="blog-card__body">
+                            <span class="blog-card__date">28 Febrero, 2026</span>
+                            <h3 class="blog-card__title">Rutina de 20 minutos en casa: sin excusas para no entrenar</h3>
+                            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Artículo 3 -->
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=400&fit=crop" alt="Ropa de compresión" class="blog-card__img" loading="lazy">
+                        <div class="blog-card__body">
+                            <span class="blog-card__date">10 Febrero, 2026</span>
+                            <h3 class="blog-card__title">Beneficios de la ropa deportiva de compresión que no conocías</h3>
+                            <a href="#" class="blog-card__link">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACTO ========== -->
+        <section class="section contact" id="contacto">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">Contacto</span>
+                    <h2 class="section__title">Hablá con Nosotros</h2>
+                </div>
+                <div class="contact__grid">
+                    <!-- Datos de contacto -->
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Teléfono / WhatsApp</strong>
+                                <span>+502 5678 1234</span>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Correo electrónico</strong>
+                                <span>hola@sudorygloria.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Dirección</strong>
+                                <span>7ma Avenida 12-34, Zona 9, Ciudad de Guatemala (local 2B)</span>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Horario de atención</strong>
+                                <span>Lunes a viernes: 9:00 – 18:00 h<br>Sábados: 9:00 – 13:00 h</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <!-- Formulario de contacto -->
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar consulta <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <!-- Logo y descripción -->
+            <div class="footer__brand">
+                <span class="footer__logo">💪 Sudor <span class="text-accent">&</span> Gloria</span>
+                <p>Ropa deportiva de alto rendimiento, diseñada en Guatemala para quienes entrenan sin límites.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <!-- Enlaces rápidos -->
+            <div class="footer__links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Información -->
+            <div class="footer__links">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Guía de tallas</a></li>
+                    <li><a href="#">Políticas de envío</a></li>
+                    <li><a href="#">Cambios y devoluciones</a></li>
+                    <li><a href="#">Métodos de pago</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter -->
+            <div class="footer__newsletter">
+                <h4>Suscribite al Newsletter</h4>
+                <p>Recibí tips, promociones y novedades exclusivas.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Sudor y Gloria. Todos los derechos reservados. Hecho con 💪 en Guatemala.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÓN FLOTANTE WHATSAPP ==================== -->
+    <a href="https://wa.me/50256781234?text=Hola%20Sudor%20y%20Gloria%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ==================== MODAL CARRITO ==================== -->
+    <div class="modal-overlay" id="cartModalOverlay">
+        <div class="modal modal--cart" id="cartModal">
+            <div class="modal__header">
+                <h2>Tu Carrito</h2>
+                <button class="btn-icon modal__close" id="closeCartModal" aria-label="Cerrar carrito">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal__body" id="cartItemsContainer">
+                <!-- JS llena los items del carrito -->
+                <p class="cart-empty">Tu carrito está vacío.</p>
+            </div>
+            <div class="modal__footer" id="cartFooter" style="display:none;">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cartTotal">Q0.00</strong>
+                </div>
+                <button class="btn btn-primary btn-full" id="checkoutBtn">Continuar compra <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL CHECKOUT ==================== -->
+    <div class="modal-overlay" id="checkoutModalOverlay">
+        <div class="modal modal--checkout" id="checkoutModal">
+            <div class="modal__header">
+                <h2>Finalizar Compra</h2>
+                <button class="btn-icon modal__close" id="closeCheckoutModal" aria-label="Cerrar checkout">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal__body">
+                <form id="checkoutForm">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="checkoutName" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="checkoutEmail" placeholder="Correo electrónico" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="checkoutPhone" placeholder="Teléfono" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dirección de Envío</legend>
+                        <div class="form-group">
+                            <input type="text" id="checkoutAddress" placeholder="Dirección completa" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="checkoutCity" placeholder="Ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="checkoutZip" placeholder="Código postal" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Método de Pago</legend>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="tarjeta" checked>
+                                <span class="payment-option__content">
+                                    <i class="fa-regular fa-credit-card"></i> Tarjeta de Crédito/Débito
+                                </span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="transferencia">
+                                <span class="payment-option__content">
+                                    <i class="fa-solid fa-building-columns"></i> Transferencia Bancaria
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="checkout-summary" id="checkoutSummary">
+                        <!-- JS llena el resumen -->
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Confirmar Pedido <i class="fa-solid fa-check"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST CONTAINER ==================== -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ==================== SCRIPT ==================== -->
+    <script src="script.js"></script>
+</body>
+</html>
